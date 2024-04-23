@@ -33,6 +33,8 @@ Flask/Django: Web framework for deploying the predictive model.
 
 GitHub Actions: Automated workflows for testing and deployment.
 
+Usage:
+Clone the repo: https://github.com/AnshLaw/Tech-addict-predictor.git
 
 Contribution:
 Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements to enhance the project.
