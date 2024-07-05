@@ -154,7 +154,7 @@ def home():
     return "Hello, Flask is running!"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=10000)
 
 if os.getenv('HEADLESS', 'false').lower() == 'true':
     display.stop()
