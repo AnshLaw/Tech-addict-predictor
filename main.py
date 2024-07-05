@@ -1,4 +1,5 @@
 import tkinter as tk
+from flask import Flask
 from pyvirtualdisplay import Display
 import pickle
 import os
@@ -146,10 +147,14 @@ class CheckboxForm(tk.Tk):
         self.model = pickle.load('knn.pkl')
         
         
+app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Hello, Flask is running!"
 
 if __name__ == "__main__":
-    app = CheckboxForm()
-    app.mainloop()
-    if os.getenv('HEADLESS', 'false').lower() == 'true':
-        display.stop()
+    app.run(host="0.0.0.0", port=8000)
+
+if os.getenv('HEADLESS', 'false').lower() == 'true':
+    display.stop()
