@@ -152,4 +152,4 @@ if __name__ == "__main__":
     app = CheckboxForm()
     app.mainloop()
     if os.getenv('HEADLESS', 'false').lower() == 'true':
-    display.stop()
+        display.stop()
