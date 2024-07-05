@@ -2,5 +2,3 @@ tkinter
 pickle
 pandas
 sklearn
-sklearn.model_selection
-sklearn.neighbors
