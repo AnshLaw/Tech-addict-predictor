@@ -1,4 +1,1 @@
-tkinter
-pickle
-pandas
 sklearn
